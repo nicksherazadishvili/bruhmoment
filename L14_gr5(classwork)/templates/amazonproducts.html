@@ -1,0 +1,15 @@
+{%  extends 'base.html' %}
+ {% block title %} Home page {%  endblock %}
+
+{% block content %}
+<br>
+<h3>Add the product</h3>
+    <form method="post" style="width:50%; margin-left: 10px">
+      <div class="form-group">
+        <input type="text" name="title" class="form-control" placeholder="Prodcut title"><br>
+        <input type="text" name="author" class="form-control" placeholder="Product owner"><br>
+        <input type="text" name="price" class="form-control"  placeholder="Price"><br>
+      </div>
+    <button type="submit" class="btn btn-primary">add product to shopping cart</button>
+    </form>
+{% endblock %}
